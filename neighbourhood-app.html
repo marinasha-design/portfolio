@@ -11,10 +11,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="./images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
 
-	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="./css/app.min.css">
 	<script type="text/javascript">
     (function () {
       function init() {
@@ -39,6 +39,7 @@
       }
     })();
   </script>
+  <script src="./js/app.min.js" defer></script>
 
 </head>
 
@@ -50,20 +51,18 @@
 	<div class="central-container">
 		<header class="header">
 			<div class="header__top">
-				<a href="./index.html" class="header__logo-link">
-					<img
-						src="./images/dist/logo-marisha.svg"
-						class="header__logo"
-						alt="Logo MARISHA. webdesign"
-						width="192"
-						height="44"
-					/>
-				</a>
+
 			</div>
 		</header>
 
 		<main class="main">
-			<nav class="main__nav">
+			<div class="main__nav-empty"></div>
+
+			<nav class="main__nav main__works-nav">
+				<a href="./index.html" class="main__works-nav-logo">
+					<img src="./images/dist/logo-marisha.svg" alt="Logo MARISHA. webdesign" width="192"
+						height="44" />
+				</a>
 				<ul class="main__nav-list">
 					<li class="main__nav-item">
 						<a href="./index.html" class="main__link">about me</a>
