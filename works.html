@@ -11,10 +11,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<link rel="icon" href="images/favicon.png">
+	<link rel="icon" href="./images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
 
-	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="./css/app.min.css">
 	<script type="text/javascript">
     (function () {
       function init() {
@@ -39,6 +39,7 @@
       }
     })();
   </script>
+  <script src="./js/app.min.js" defer></script>
 
 </head>
 
@@ -58,6 +59,7 @@
 		</header>
 
 		<main class="main">
+
 			<nav class="main__nav">
 				<ul class="main__nav-list">
 					<li class="main__nav-item">
@@ -80,7 +82,7 @@
 			</nav>
 
 			<section class="cosmetics">
-				<div class="cosmetics__container">
+				<div>
 					<div class="works__header-wrapper">
 						<h1 class="main-title">
 							Works
@@ -100,18 +102,25 @@
 						</div>
 
 					</div>
-					<div>
+					<div class="main__works-menu">
 						<ul class="main__slider-works-list">
 							<li class="main__slider-works-item">
-								<a href="./seed-shop.html" class="main__slider-works-link  main__slider-works-link_radishapp">Seed Shop App</a>
+								<a href="./seed-shop.html" class="main__slider-works-link " data-type="radishapp">Seed Shop App</a>
 								</li>
 							<li class="main__slider-works-item">
-								<a href="./happy-paws.html" class="main__slider-works-link  main__slider-works-link_happypaw">Happy Paw’s<br>Pet Adoption Flow</a>
+								<a href="./happy-paws.html" class="main__slider-works-link" data-type="happypaw">Happy Paw’s<br>Pet Adoption Flow</a>
 								</li>
 							<li class="main__slider-works-item">
-								<a href="./neighbourhood-app.html" class="main__slider-works-link  main__slider-works-link_neighbourhoodapp">My Neighbourhood<br>Dedicated App</a>
+								<a href="./neighbourhood-app.html" class="main__slider-works-link" data-type="neighbourhoodapp">My Neighbourhood<br>Dedicated App</a>
 							</li>
 						</ul>
+						<div class="main__works-preview">
+							<a href="./seed-shop.html" class="main__works-preview-block main__works-preview-radishapp"><img class="main__works-preview-img"src="./images/dist/preview-radishapp.png" alt="radishapp"></a>
+
+							<a href="./happy-paws.html" class="main__works-preview-block main__works-preview-none main__works-preview-happypaw"><img class="main__works-preview-img" src="./images/dist/preview-happy-paw.png" alt="happypaw"></a>
+
+							<a href="./neighbourhood-app.html" class="main__works-preview-block main__works-preview-none main__works-preview-neighbourhoodapp"><img class="main__works-preview-img"src="./images/dist/preview-myurb.png" alt="neighbourhoodapp"></a>
+						</div>
 					</div>
 				</div>
 			</section>
